@@ -8,6 +8,10 @@ a{
     color: black;
 }
 
+a:hover{
+    color: orange;
+}
+
 body{
     margin:0;
 }
@@ -40,8 +44,6 @@ hr{
     width: 80%;
 }
 
-
-
 img {
     max-width: 100%;
 }
@@ -49,14 +51,17 @@ img {
 ul{
     padding: 0;
     list-style: none;
-    
 }
 
 li{
     padding: 2% 0;
-    font-weight:500;
+    font-weight:700;
     margin:10px;
     background-color:white;
+}
+
+#mid-size{
+    display:none;
 }
 
 p{
@@ -65,8 +70,8 @@ p{
 }
 
 .h3-text{
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 #selfie{
@@ -89,6 +94,233 @@ footer{
 
 
 #footer-background .background{
-    padding:0 5%;
+    padding: 0 5%;
 }
 
+@media (min-width: 768px){
+
+    h1{
+        padding: 5%;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    div{
+        padding: 0 5%;
+    }
+
+    .float-left{
+        float: left;
+        width:47%;
+        max-width: 47%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    h3, h4{
+        align-content: center;
+    }
+
+    #item-1{
+        margin-right: auto;
+    }
+
+    #info{
+        display: flex;
+        padding: 0;
+        flex-direction: row-reverse;
+    }
+
+
+    li{
+        display:inline-block;
+        background:none;
+    }
+
+    #list-midsize{
+        padding: 0;
+    }
+
+    #mobile,
+    #header-2{
+        display: none;
+    }
+
+    #mid-size{
+        display: block;
+    }
+
+    #nav-container{
+       margin: 0 auto;
+       margin-top:-5%;
+       max-width: 90%; 
+    }
+
+
+    #name{
+        padding-right: 400px;
+    }
+
+    #nav-container-full,
+    #nav-container-midsize{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .row{
+        align-content: center;
+        padding-bottom: 5%;
+        overflow: auto;
+    }
+
+    #selfie{
+        padding-top: 0;
+        max-width: 40%;
+    }
+
+    #selfie-text{
+        padding-left: 0;
+        padding-right: 3%;
+        text-align: left;
+    }
+    
+    .text-left{
+        max-width:80%;
+        margin: 0 auto;
+        padding-right: 3%;
+    }
+    
+    .text-right{
+        max-width:80%;
+        margin: 0 auto;
+        padding-left: 3%;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    
+    .background{
+        padding-top:0;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    div{
+        padding: 0 5%;
+    }
+
+    .float-left{
+        float: left;
+        width:32%;
+        max-width: 32%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    h3, h4{
+        align-content: center;
+    }
+
+    #header-1{
+        display: none;
+    }
+
+    #header-2{
+        display: initial;
+    }
+
+    
+    #item-1,
+    #nav-item-1{
+        margin-right: auto;
+    }
+
+    #info{
+        display: flex;
+        padding: 0;
+        flex-direction: row-reverse;
+    }
+
+
+    li{
+        display:inline-block;
+        background:none;
+        font-size: 120%;
+    }
+
+    #nav-item-1{
+        font-size: 180%;
+        padding-top: 10px;
+    }
+
+    #list-midsize{
+        padding: 0;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #mid-size{
+        display: block;
+    }
+
+    #nav-container{
+       margin: 0 auto;
+       margin-top:-5%;
+       max-width: 90%; 
+    }
+
+
+    #name{
+        padding-right: 400px;
+    }
+
+    #nav-container-full-size,
+    #nav-container-midsize{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    .row{
+        align-content: center;
+        padding-bottom: 5%;
+        overflow: auto;
+    }
+
+    #selfie{
+        padding-top: 0;
+        max-width:60%;
+    }
+
+    #selfie-text{
+        padding-left: 0;
+        padding-right: 3%;
+        text-align: left;
+    }
+    
+    .text-left{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .text-right{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    ul{
+        padding-bottom: 2%;
+    }
+}
