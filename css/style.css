@@ -1,5 +1,5 @@
 *{
-    font-family:'Open Sans', sans-serif;
+    font-family:'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -24,10 +24,6 @@ body{
 .background P {
     padding-bottom:0;
     color:rgb(146, 146, 146);
-}
-
-.contact-text{
-    padding-top:-10%
 }
 
 div{
@@ -93,15 +89,12 @@ footer{
 }
 
 
-#footer-background .background{
+.footer-background .background{
     padding: 0 5%;
 }
 
 @media (min-width: 768px){
 
-    h1{
-        padding: 5%;
-    }
 
     .clearfix::after {
         content: "";
@@ -119,6 +112,10 @@ footer{
         max-width: 47%;
         padding: 5px;
         margin: 0 auto;
+    }
+
+    h1{
+        padding: 5%;
     }
 
     h3, h4{
@@ -154,11 +151,14 @@ footer{
         display: block;
     }
 
-    #nav-container{
-       margin: 0 auto;
-       margin-top:-5%;
-       max-width: 90%; 
+    #my-name{
+        padding-bottom:1%;
     }
+
+    #nav{
+        margin-bottom: 5%;
+        margin-top: 0; 
+     }
 
 
     #name{
@@ -232,13 +232,10 @@ footer{
     }
 
     #header-1{
-        display: none;
+        padding: 0;
+        padding-top: 5%;
     }
-
-    #header-2{
-        display: initial;
-    }
-
+    
     
     #item-1,
     #nav-item-1{
@@ -275,18 +272,20 @@ footer{
         display: block;
     }
 
-    #nav-container{
-       margin: 0 auto;
-       margin-top:-5%;
-       max-width: 90%; 
+    #my-name{
+        float: left;
+        padding: 0;
+        padding-top:2%;
     }
 
+    #nav{
+        text-align: right;
+    }
 
     #name{
         padding-right: 400px;
     }
 
-    #nav-container-full-size,
     #nav-container-midsize{
         display: flex;
         flex-grow: 1;
@@ -323,4 +322,10 @@ footer{
     ul{
         padding-bottom: 2%;
     }
+
+
+
+    /*.background #nav-container{
+       float: left;
+    }*/
 }
